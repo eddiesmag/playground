@@ -42,6 +42,7 @@ function processOrder(order) {
 
 /** new test changes
  * 
- * 
+ *  fixer added some more code
+ * causing conflicts
  * and some more
  */
