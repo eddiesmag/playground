@@ -39,10 +39,3 @@ function processOrder(order) {
 // }
 // }
 // asyncFunc();
-
-/** new test changes
- * 
- *  test's improved code
- * causing conflicts
- * and some more
- */
