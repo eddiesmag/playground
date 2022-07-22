@@ -15,6 +15,12 @@ function processOrder(order) {
         resolve("Extra Information ");
     });
 }
+
+`${{
+
+    //some code here
+}}`
+
 /** with promises */
 // makeCoffee("Black coffee").then(order =>{
 //     console.log("Order has been received");
