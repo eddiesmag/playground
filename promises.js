@@ -1,27 +1,4 @@
 /** Basic Promises */
-/*var promise = new Promise(function(resolve, reject) {
-    var myBoy = false;
-
-    if(!myBoy) {
-        resolve("Stuff worked....");
-    } else {
-        reject(Error("Stuff Broke!!!!"));
-    }
-})
-
-// promise.then(function(result) {
-//     console.log(result);
-// }, function(err) {
-//     console.log(err);
-// })
-
-promise.then(function(result) {
-    console.log(result);
-}).catch(function(err) {
-    console.log(err)
-})*/
-
-/** Promises Example */
 
 var functions = function() {
     return new Promise(function(resolve, reject) {
@@ -60,3 +37,27 @@ function Start() {
 function Stop() {
     clearTimeout(id);
 }
+
+/*var promise = new Promise(function(resolve, reject) {
+    var myBoy = false;
+
+    if(!myBoy) {
+        resolve("Stuff worked....");
+    } else {
+        reject(Error("Stuff Broke!!!!"));
+    }
+})
+
+// promise.then(function(result) {
+//     console.log(result);
+// }, function(err) {
+//     console.log(err);
+// })
+
+promise.then(function(result) {
+    console.log(result);
+}).catch(function(err) {
+    console.log(err)
+})*/
+
+/** Promises Example */
