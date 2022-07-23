@@ -16,32 +16,26 @@ function processOrder(order) {
     });
 }
 
-`${{
-
-    //some code here
-}}`
-
 /** with promises */
-// makeCoffee("Black coffee").then(order =>{
-//     console.log("Order has been received");
-//     return processOrder(order);
-// }).then(processedOrder => {
-//     console.log(processedOrder);
-// }).catch(err =>{
-//     console.log(console.log(err));
-// })
+makeCoffee("Black coffee").then(order =>{
+    console.log("Order has been received");
+    return processOrder(order);
+}).then(processedOrder => {
+    console.log(processedOrder);
+}).catch(err =>{
+    console.log(console.log(err));
+})
 
 /** with async await */
+async function asyncFunc() {
+    try {
+    var order = await makeCoffee("Black cof  fee");
+    console.log("Order has been received");
 
-// async function asyncFunc() {
-//     try {
-//     var order = await makeCoffee("Black cof  fee");
-//     console.log("Order has been received");
-
-//     var processedOrder = await processOrder(order);
-//     console.log(processedOrder);
-// } catch(err) {
-//     console.log(err); 
-// }
-// }
-// asyncFunc();
+    var processedOrder = await processOrder(order);
+    console.log(processedOrder);
+} catch(err) {
+    console.log(err); 
+}
+}
+asyncFunc();
