@@ -60,16 +60,3 @@ function Start() {
 function Stop() {
     clearTimeout(id);
 }
-
-/**
- * 
- * 
- * new changes on master
- */
-
-
-/**
- * 
- * 
- * new changes on test branch
- */
